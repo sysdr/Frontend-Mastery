@@ -1,0 +1,150 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+
+# Testing
+/coverage
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Production
+/build
+/dist
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+
+# Storybook
+storybook-static/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+.ENV
+
+# Istio
+istio/
+Istio/
+*istio*
+*Istio*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# React
+*.map
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Secrets and API keys
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+.secrets/
+*secret*
+*SECRET*
+*api*key*
+*API*KEY*
+*apikey*
+*APIKEY*
+*token*
+*TOKEN*
+*password*
+*PASSWORD*
+
+# Misc
+.sass-cache/
+connect.lock
+typings/
+.stylelintcache

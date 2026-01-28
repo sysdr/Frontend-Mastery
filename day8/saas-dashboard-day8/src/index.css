@@ -1,0 +1,136 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #282c34;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2.5em;
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 1.1em;
+  color: #a0a0a0;
+  margin-bottom: 30px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  background-color: #33373e;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border: 1px solid #444;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  background-color: #3c4048;
+}
+
+.metric-card h3 {
+  color: #61dafb;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.metric-card p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.metric-card .status-text {
+  font-weight: bold;
+}
+
+.metric-card.status-active {
+  border-left: 5px solid #4CAF50; /* Green */
+}
+
+.metric-card.status-inactive {
+  border-left: 5px solid #FFC107; /* Orange */
+}
+
+.metric-card button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.metric-card button:hover:not(:disabled) {
+  background-color: #21a1f1;
+}
+
+.metric-card button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}

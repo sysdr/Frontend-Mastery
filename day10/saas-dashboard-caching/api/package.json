@@ -1,0 +1,10 @@
+{
+  "name": "saas-api-day10",
+  "version": "1.0.0",
+  "description": "Metrics API for Day 10",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

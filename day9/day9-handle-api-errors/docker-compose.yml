@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+    environment:
+      NODE_ENV: development
+    command: npm start
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    environment:
+      # This is crucial for Create React App to know where the backend is
+      # In a real production setup, this would be handled by a proxy or environment variables
+      REACT_APP_BACKEND_URL: http://backend:3001

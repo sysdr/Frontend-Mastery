@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Build / output
+build/
+dist/
+*.log
+backend/backend.log
+frontend/frontend.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# PID files
+.backend_pid
+.frontend_pid
+
+# Docker
+.docker/
+
+# Istio (if present)
+*istio*

@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+.nyc_output/
+
+# Production build
+/build
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.docker/
+
+# Istio
+istio*.yaml
+istio*.yml
+*-istio-*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+.cache/
+
+# Logs
+logs/
+*.log
+
+# API Keys and Secrets - NEVER COMMIT THESE
+*.key
+*.pem
+.env*
+secrets/
+credentials/
+*_secret*
+*_api_key*
+config/secrets.js
+config/secrets.json
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Service worker
+public/service-worker.js
+public/workbox-*.js

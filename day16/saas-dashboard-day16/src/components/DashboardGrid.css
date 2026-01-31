@@ -1,0 +1,38 @@
+.dashboard-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for desktop */
+  gap: 24px; /* Space between widgets */
+  padding: 30px;
+  max-width: 1100px; /* Max width for the dashboard */
+  margin: 0 auto; /* Center the grid */
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Large Tablet / Small Desktop */
+@media (max-width: 1100px) {
+  .dashboard-grid-container {
+    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    padding: 20px;
+  }
+}
+
+/* Tablet Layout */
+@media (max-width: 768px) {
+  .dashboard-grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 576px) {
+  .dashboard-grid-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 16px;
+    padding: 12px;
+  }
+}

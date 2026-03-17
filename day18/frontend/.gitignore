@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Runtime / logs
+.env
+.env.local
+.env.*.local
+*.log
+.frontend_dev_server.pid
+frontend_dev_server.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Vite
+*.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional
+coverage/
+.nyc_output/

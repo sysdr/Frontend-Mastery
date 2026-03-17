@@ -1,0 +1,76 @@
+.data-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    max-width: 300px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.data-card:hover, .data-card:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    outline: none; /* Remove default focus outline for custom styling */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.card-title {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+.card-body {
+    margin-bottom: 15px;
+}
+
+.card-value {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #222;
+}
+
+.card-unit {
+    font-size: 1em;
+    color: #666;
+    margin-left: 5px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.trend-indicator {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.trend-up {
+    color: #28a745; /* Green */
+}
+
+.trend-down {
+    color: #dc3545; /* Red */
+}
